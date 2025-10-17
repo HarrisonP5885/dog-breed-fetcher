@@ -26,9 +26,5 @@ public interface BreedFetcher {
         public BreedNotFoundException(String breed, Throwable cause) {
             super("Breed not found: " + breed, cause);
         }
-
-        public BreedNotFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-            super(message, cause, enableSuppression, writableStackTrace);
-        }
     }
 }
